@@ -2,6 +2,7 @@
 filebeat:
   prospectors:
     - input_type: <%= @input_type %>
+      enabled: true
       paths:
         <%- @paths.each do |log_path| -%>
         - <%= log_path %>
